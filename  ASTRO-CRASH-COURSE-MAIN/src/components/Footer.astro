@@ -1,0 +1,111 @@
+
+---
+import finedgelogo from '../images/finedgelogo.png'
+---
+
+<div class="footer">
+  <div class="col-1">
+      <h3>USEFUL LINKS</h3>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/blog">Contact</a>
+     
+      
+  </div>
+  <div class="col-2">
+      <h3>NEWS LETTER</h3>
+      <form>
+          <input type="email" placeholder="Your Email Address" required>
+          <br>
+          <button type="submit">SUBSCRIBE NOW</button>
+      </form>
+  </div>
+  <div class="col-3">
+      <img class="logo"  src={finedgelogo} alt=""/>
+      <h3>CONTACT</h3>
+      <p>Plot no. 14, 3rd Floor,
+        <br>Sector – 44, Gurgaon – 122003</p>
+      <div class="social-icons">
+          <a href="https://www.facebook.com">
+              <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://www.twitter.com">
+              <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com">
+              <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com">
+              <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+
+
+      </div>
+  </div>
+</div>
+  <style>
+    
+.footer {
+    margin-top: 300px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #050410;
+    color: #efefef;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col-2 {
+    flex-grow: 2;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons ion-icon {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+  </style>

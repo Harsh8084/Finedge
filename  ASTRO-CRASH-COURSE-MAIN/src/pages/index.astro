@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Features from '../components/Features.astro';
+import st from '../images/st.gif';
+import Tabs from '../components/Tabs.astro';
+---
+
+<Layout>
+
+     
+	<img class="st" src={st} alt="" />
+
+	<Showcase showExtra={true} />
+	<Features />
+	
+	<section class="page-content">
+		<div class="container">
+			<h2>Why Choose FinEdge?</h2>
+			<p>
+				At FinEdge, we pioneered the “Bionic” investing model in India with the belief that technology should not replace people but empower them. We strongly believe that the human touch & the dedicated support of an Investment Manager (along with fantastic tech) are critical for enabling you to achieve your long-term financial goals.
+
+All your investments through FinEdge will be linked to clearly defined goals. Your Investment Manager will help you avoid investing decisions that are based on greed and fear. Your experience with us will be seamless, convenient and paperless. You will have the best tools to manage your progress towards your goals and ensure a best-in-class investment plan. Over time, we believe that your relationship with FinEdge will be one of trust and mutual respect something very few platforms in the country can say today!
+			</p>
+			<h2>Why Investing Goals Are Important</h2>
+			<p>
+				In the end, setting smart investing goals is what plays the biggest role in determining our investing success. unfortunately, most of us end up chasing short term returns during our investment planning journeys, leading to a poor experience. Instead, basing your investment plan on the foundation of investing goals can help you control and manage detrimental investing behaviours like greed and fear, thereby keeping you focused on the big picture instead of worrying about short term fluctuations or trends.
+
+Goal based investing also helps you maintain a balanced approach towards your cash flows and savings, thereby ensuring that your key financial health ratios are in check. A goal plan acts as a roadmap towards a better financial future, ensuring reduced financial stress and a greatly enhanced investing journey.
+			</p>
+
+
+
+		
+			<Tabs headings={['NPM', 'PNPM', 'YARN']} contents={['$ npm create astro@latest', '$ pnpm create astro@latest', '$ yarn create astro']} />
+
+			<h3>Your Investment Plan- Executed
+				By Experts</h3>
+			<p>
+				We are very good at what we do. To ensure you meet your investment objectives, our investment managers use top of the line technology, knowledge and processes.
+
+The investments managers are highly qualified (MBA’s / CFP’s / Financial Planning Diploma / Masters in Commerce/ MBA’s in Financial Planning) and are also duly certified from the SEBI established National Institute of Securities Markets (Mutual Fund Advisors Module).
+
+At FinEdge, you can rest assured your investment planning is in good hands.
+			</p>
+		</div>
+	</section>
+</Layout>

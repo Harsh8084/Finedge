@@ -1,0 +1,38 @@
+---
+import Card from './Card.astro'
+
+const featuresData = [
+  {title: 'FinEdge The Investing Expert'},
+  {title: 'Welcome To Wealth Creation Platform'},
+  {title: 'Meeting Your Goals'}
+];
+---
+
+<section class="features">
+  <div class="container">
+   {featuresData.map(feature => (
+      <Card>
+        <h2>{feature.title}</h2>
+        <p>{feature.body}</p>
+      </Card>
+    ))}
+  </div>
+</section>
+
+<style>
+  .features .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    margin: 30px auto;
+    color: rgb(31, 190, 60);
+  }
+
+  @media (max-width: 500px) {
+  .features .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>

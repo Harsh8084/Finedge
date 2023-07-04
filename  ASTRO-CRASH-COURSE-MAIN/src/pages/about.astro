@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro'
+
+import logos from '../images/ceo.jpg';
+import logosSmall from '../images/deploy-logos-small.png';
+---
+
+<Layout title="About Astro">
+  <section class="page-content">
+    <div class="container">
+        <h2>India’s Leading
+            Wealth Creation & Financial Planning Experts</h2>
+      
+
+
+      <Card dark={true}>
+        <h3  >About Us</h3>
+        <p>
+            FinEdge was born with a single objective, of enabling wealth creation for our clients through quality and conflict free investment management. The use of technology is our cornerstone in ensuring that we can reach across demographics and geographies, provide a convenient, low cost - high quality, process driven, goal oriented, wealth creation platform.
+
+            We are experts at what we do and for us our success lies only in making our clients meet their investment objectives. We love the fact that we are known and respected by our clients and the industry for our unique business model and our conflict free advice.
+        </p>
+      </Card>
+      
+      <h3>Harsh Gahlaut
+       </h3>
+       <h3> Co-Founder & CEOs</h3>
+      <img class="ceoimg" src={logos} alt="" />
+      <img class="logos-small" src={logosSmall} alt="" />
+      <p class="ceo">
+        Harsh Co-founded FinEdge after successfully managing several large businesses in the Financial Services Industry. He is a Management Graduate from Symbiosis (Pune) and has worked with institutions like Xerox (Key Accounts Manager),Standard Chartered Bank (Regional Head - Capital Markets), Dawnay Day AV (Country Head - Wealth Management) & Religare Macquarie (Senior Vice President - Private Banking) over the last 21 years.
+      </p>
+      <!-- <h3>Join our Community</h3>
+      <p>
+        Join us in the Astro Discord to share with and get help from an
+        active, friendly community!
+      </p>
+
+      <ul>
+        <li>💬 Say hi in our #introduce-yourself channel!</li>
+        <li>
+          💬 Ask our Support Squad a question in our #support-threads
+          channel!
+        </li>
+        <li>
+          💬 Share what you've been working on in our #showcase channel!
+        </li>
+      </ul>
+   -->
+
+   
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Card from '../components/Card.astro';
+import logos from '../images/w1.jpeg';
+import transfer from '../images/transfer.gif';
+import business from '../images/business.gif';
+import track from '../images/track.gif';
+const posts = await Astro.glob('../posts/*.md');
+---
+
+<Layout title="Astro Blog">
+    <div class="middle-container">
+        <div class="profile">
+           
+            <img class="call" src={logos} alt="" />
+            <h2>Hello.....</h2>
+            <p>Welcome to our portal. How can we help you today?
+            </p>
+        </div>
+        <hr>
+        <div class="skills">
+            <h1 style="size: 20px; color: #821687;">Our Services</h1>
+            <div class="skill-row">
+              
+                <img class="t" src={transfer} alt=""  style="height: 30%;width:30%; border-radius: 10%;">
+                <h2 style="color: #821687;">Individual Money Transfer</h2>
+
+
+                <p>Money transfer companies include primarily peer-to-peer platforms to transfer money between individuals across countries. </p>
+
+            </div>
+            <div class="skill-row">
+              
+                
+                <img class="im2" src={business} alt=""  style="height:30%;width: 30%; border-radius: 20%;">
+
+                <h2 style="color: #821687;">Business Payments </h2>
+
+                <p>Fintech has given merchants and customers more options for making payments, thanks to the wonders of payment processing companies. </p>
+            </div>
+            <div class="skill-row">
+                
+                <img class="im2" src={track} alt=""  style="height:30%;width: 30%; border-radius: 20%;">
+
+                <h2 style="color: #821687;">Real Time Payment Tracking </h2>
+
+                <p>Banks and financial-technology companies recently joined forces to participate in a friendly competition focused on the real-time payments space.</p>
+            </div>
+            
+        </div>
+   
+
+    </div>
+</Layout>
